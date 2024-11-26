@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +6,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Cormorant Garamond', serif; 
+    background-color: #d0d0cc; 
+    color: #333;
 }
 
 /* Header Navigation */
 header {
-    background: #333;
-    color: #fff;
+    background: #393838;
+    color: #0d0c0c;
     padding: 10px 0;
 }
 
@@ -30,7 +32,7 @@ nav {
 }
 
 .menu a {
-    color: #fff;
+    color: #fcf8f8;
     text-decoration: none;
     font-weight: bold;
 }
@@ -45,8 +47,8 @@ nav {
     position: absolute;
     background: #444;
     list-style: none;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 5px;
+    padding: 5px;
     border-radius: 5px;
 }
 
@@ -59,7 +61,7 @@ nav {
 }
 
 .dropdown-menu a {
-    color: #fff;
+    color: #191717;
     text-decoration: none;
 }
 
@@ -72,33 +74,48 @@ nav {
     height: 100vh;
     background: url('home-bg.jpg') no-repeat center center/cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-#home h1 {
-    color: #fff;
-    font-size: 3rem;
+.hero-text {
+    color: #faf3f3;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-subtext {
+    color: #f8f8f8;
+    font-size: 1.5rem;
+    margin-top: -10px;
+}
+
+.highlight {
+    color: #f4a261; /* Highlighted aesthetic color */
 }
 
 /* Section Styles */
 section {
     padding: 50px;
     text-align: center;
-    background: #f4f4f4;
+    background: #faf5f5;
     margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #333;
-    font-size: 2rem;
+    color: #444;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 p, ul, li {
     color: #555;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
 }
 
@@ -124,7 +141,7 @@ a:hover {
 footer {
     text-align: center;
     background: #222;
-    color: #fff;
+    color: #f8f5f5;
     padding: 10px;
     position: fixed;
     bottom: 0;
